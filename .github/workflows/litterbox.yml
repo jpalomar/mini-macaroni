@@ -32,11 +32,11 @@ jobs:
       - name: Print an optional dry-run message
         if: ${{ github.inputs.dry-run == 'true' }}
         shell: bash
-        run: echo Hey it's a Dry Run!
+        run: echo "Hey it's a Dry Run!"
 
       - name: Print a regular message
         shell: bash
-        run: echo Hey it's a message!
+        run: echo "Hey it's a message!"
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
