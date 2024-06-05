@@ -31,7 +31,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Print an optional dry-run message
-        if: ${{ github.inputs.dry-run == 'true' }}
+        if: ${{ github.event.inputs.dry-run == 'true' }}
         shell: bash
         run: echo "Hey it's a Dry Run!"
 
